@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+      <form id="form">
+        <div class="form-control">
+          <label for="name">Name:</label>
+          <input type="text" placeholder="Enter your name" id="name" />
+        </div>
+        <div class="form-control">
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Enter your email" id="email" />
+        </div>
+        <div class="form-control">
+            <label for="age">Age:</label>
+            <input type="number" placeholder="Enter your age" id="age" />
+        </div>
+        <div class="form-control">
+          <label for="job">Which option best describes you?</label>
+          <select name="job" id="job">
+            <option value="Student">Student</option>
+            <option value="Intern">Intern</option>
+            <option value="Professional">Professional</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-control">
+          <label>Would you recommend us to a friend?</label>
+          <label for="yes"><input type="radio" id="yes" name="rec" value="yes">Yesss</input></label>
+          <label for="no"><input type="radio" id="no" name="rec" value="no">No</input></label>
+          <label for="maybe"><input type="radio" id="maybe" name="rec" value="maybe">Maybe</input></label>
+        </div>
+        <div class="form-control">
+          <label for="lang">Languages and frameworks known
+            <small>(Check all that apply)</small></label>
+          <label for="cpp"><input type="checkbox" id="cpp">C++</input></label>
+          <label for="html"><input type="checkbox" id="html">Html</input></label>
+          <label for="css"><input type="checkbox" id="css">Css</input></label>
+          <label for="tailwind"><input type="checkbox" id="tailwind">Tailwind</input></label>
+          <label for="javascript"><input type="checkbox" id="javascript">JavaScript</input></label>
+        </div>
+        <div class="form-control">
+          <label for="comment">Any comments or suggestions</label>
+          <textarea name="comments" id="comment" cols="30" rows="8"></textarea>
+        </div>
+        <button>Submit</button>
+      </form>
+  </body>
+</html>
