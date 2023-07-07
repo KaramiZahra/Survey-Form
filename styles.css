@@ -1,0 +1,50 @@
+body{
+    background-image: linear-gradient(to right, cyan, blue);
+    background-repeat: no-repeat;
+}
+form{
+    background-color: whitesmoke;
+    max-width: 30rem;
+    margin: 4rem auto;
+}
+.form-control{
+    margin: .5rem 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.form-control label{
+    margin-bottom: .5rem;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    border: 1px solid gray;
+    height: 1.5rem;
+}
+button{
+    background-image: linear-gradient(to right, cyan, blue);
+    color: white;
+    border: none;
+    width: 100%;
+    height: 3rem;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all .4s;
+}
+button:hover{
+    background-image: linear-gradient(to right, #81D4FA, #81D4FA);
+    color: blue;
+}
+input[type='checkbox'] {
+    accent-color: #81D4FA;
+    cursor: pointer;
+}
+input[type="radio"] {
+    accent-color: #81D4FA;
+    cursor: pointer;
+}
+::selection{
+    background-color: #81D4FA;
+}
