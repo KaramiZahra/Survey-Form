@@ -1,5 +1,7 @@
+$blue: dodgerblue;
+
 body {
-  background-image: linear-gradient(to right, rgb(22, 21, 21), dodgerblue);
+  background-image: linear-gradient(to right, rgb(22, 21, 21), $blue);
   background-repeat: no-repeat;
 }
 
@@ -8,24 +10,25 @@ form {
   max-width: 30rem;
   margin: 4rem auto;
   border-radius: 0.5rem;
-}
-@media screen and (max-width: 576px) {
-  form {
+
+  @media screen and (max-width: 576px) {
     width: 100%;
     margin: 0 auto;
   }
-}
-form .form-control {
-  margin: 0.5rem 1rem;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-}
-form .form-control label {
-  margin-bottom: 0.5rem;
+
+  .form-control {
+    margin: 0.5rem 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin-bottom: 0.5rem;
+    }
+  }
 }
 
-input:not(input[type=radio], input[type=checkbox]),
+input:not(input[type="radio"], input[type="checkbox"]),
 select {
   background-color: gainsboro;
   border: none;
@@ -34,9 +37,9 @@ select {
   padding-left: 6px;
 }
 
-input[type=checkbox],
-input[type=radio] {
-  accent-color: dodgerblue;
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: $blue;
   cursor: pointer;
 }
 
@@ -47,7 +50,7 @@ textarea {
 }
 
 button {
-  background-color: dodgerblue;
+  background-color: $blue;
   color: black;
   border: none;
   width: 40%;
@@ -57,15 +60,12 @@ button {
   border-radius: 0.3rem;
   margin: 0 auto;
   transition: all 0.4s;
-}
-button:hover {
-  color: white;
-}
 
-::-moz-selection {
-  background-color: dodgerblue;
+  &:hover {
+    color: white;
+  }
 }
 
 ::selection {
-  background-color: dodgerblue;
-}/*# sourceMappingURL=styles.css.map */
+  background-color: $blue;
+}
