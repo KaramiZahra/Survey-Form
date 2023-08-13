@@ -30,14 +30,6 @@ let passwordInput = document.getElementById('password')
 let passwordBtn = document.querySelector('.password-btn')
 let passwordBtnIcon = document.querySelector('.password-btn i')
 
-passwordInput.addEventListener('focus', function() {
-    passwordBtn.style.right = '45px'
-})
-
-passwordInput.addEventListener('blur', function() {
-    passwordBtn.style.right = '25px'
-})
-
 passwordBtn.addEventListener('click', function() {
     if(passwordInput.type === 'password') {
         passwordInput.type = 'text'
