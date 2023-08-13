@@ -37,6 +37,18 @@ select {
   padding-left: 6px;
 }
 
+.password-container {
+  position: relative;
+
+  .password-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
+    font-size: 14px;
+
+  }
+}
+
 input[type="checkbox"],
 input[type="radio"] {
   accent-color: $blue;
