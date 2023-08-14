@@ -39,3 +39,13 @@ passwordBtn.addEventListener('click', function() {
         passwordBtnIcon.classList = 'fa-solid fa-eye'
     }
 })
+
+passwordInput.addEventListener('copy', function(event) {
+    event.preventDefault()
+})
+passwordInput.addEventListener('cut', function(event) {
+    event.preventDefault()
+})
+passwordInput.addEventListener('paste', function(event) {
+    event.preventDefault()
+})
